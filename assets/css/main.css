@@ -2161,8 +2161,13 @@ input, select, textarea {
 				.wrapper.style3-alt .icon.major:before {
 					color: #953d75;
 				}
+#skills {
+	/* background-color: grey; */
+}
 .skills-icons {
-	display: flex;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-columns: 60px;
 	list-style: none;
 	flex-wrap: wrap;
 	-moz-align-items: center;
@@ -2173,9 +2178,10 @@ input, select, textarea {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
-	margin: 1 0 3em 3em;
+	margin: em 3em 3em 3em;
 	position: relative;
-	max-width: 80%;
+	/* max-width: 80%; */
+	/* padding: .1em; */
 		vertical-align: baseline;
 	
 	/* width: calc(50% - 3em); */
@@ -2184,15 +2190,33 @@ input, select, textarea {
 
 	}
 	.skill-icon {
-		color: pink;
+		color: #93A39B;
+		/* -webkit-background-clip: image; */
+		/* background-image: linear-gradient( 109.6deg,  rgba(240,228,122,1) 11.2%, rgba(253,145,212,1) 54.5%, rgba(176,222,234,1) 99.6% );		 */
+		/* -webkit-background-clip: text;
+		background-image: linear-gradient( 69.9deg,  rgba(76,79,106,1) 3.2%, rgba(118,124,163,1) 97.6% );
+		background-image: radial-gradient( circle 666px at 0.4% 48%,  rgba(202,204,227,1) 0%, rgba(89,89,99,1) 97.5% );
+		background-image: linear-gradient( 109.6deg,  rgba(205,139,81,1) 32.7%, rgba(234,178,118,1) 77.5% ); */
+
+/* background-image: radial-gradient( circle 582px at 48.3% 136.8%,  rgba(200,159,159,1) 56.9%, rgba(134,133,171,1) 100.2% ); */
+/* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,168,114,1) 0%, rgba(254,106,164,1) 100.2% ); */
+/* background-image: linear-gradient( 109.1deg,  rgba(249,244,233,1) 3.4%, rgba(243,220,193,1) 23.5%, rgba(224,171,165,1) 45%, rgba(161,127,161,1) 65.3%, rgba(115,106,152,1) 87.2% ); */
+	/* background-image: linear-gradient( 109.6deg,  rgba(215,109,119,1) 11.3%, rgba(255,175,123,1) 100.2% ); */
+/* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(226,240,254,1) 0%, rgba(255,247,228,1) 90% ); */
+/* background-image: linear-gradient( 179.7deg,  rgba(248,126,126,1) -0.5%, rgba(251,206,143,1) 35.3%, rgba(184,252,233,1) 67.2%, rgba(118,162,229,1) 92.3% ); */
+/* background-image: linear-gradient( 107.5deg,  rgba(208,222,170,1) 11.7%, rgba(191,226,224,1) 70.5% ); */
+
+/* -webkit-text-fill-color: transparent; */
 		font-size: 4em;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		max-width: 1em;
-		margin: .2em;
+		max-width: 2em;
+		margin: .3em;
 		vertical-align: baseline;
+		align-self: center;
+		justify-self: center;
 	}
 		.label {
 			font-size: .15em;
@@ -2203,6 +2227,8 @@ input, select, textarea {
 			line-height: 1em;
 			margin-top: 1.5em;
 			vertical-align: baseline;
+			align-self: center;
+			justify-self: center;
 			/* display: none; */
 		}
 
@@ -2809,7 +2835,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		margin: 0 0 2em 0em;
+		margin: 0 0em 2em 0em;
 		width: calc(100% + 3em);
 	}
 
@@ -2890,6 +2916,7 @@ input, select, textarea {
 				-ms-flex-shrink: 1;
 				flex-shrink: 1;
 				width: 100%;
+				/* margin-left: 1em; */
 			}
 
 				.features article .content > :last-child {
@@ -3784,3 +3811,25 @@ input, select, textarea {
 			margin-top: 0;
 			padding-top: 0;
 		}
+
+
+	
+ /* <section  id="experience">
+		<header class="major">
+			<h2>EXPERIENCE</h2>
+		</header>
+		<div class="posts">
+			<article>
+			<p>2017-PRESENT</p>
+			<h3>Marketing Branding & Strategy Consultant | <light>ReyLenn Properties</light></h3>
+			<p>New York, NY | Luxury Apartment Development Firm </p>
+			<ul>
+				<li>Liaise with a software engineer to design and develop a project website in a two-week deadline</li>
+				<li>Spearheaded a Community Outreach Program for a proposed luxury apartment development in Los Angeles, CA to garner support for the project</li>
+				<li>Increased Facebook Ad leads rate by 476% by adjusting creative strategy based on data analysis</li>
+			</ul>
+		</article>
+			
+			
+		</div>
+</section>  */
